@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"; />
+
+        <title>Weather Widget</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Weather Widget</h1>
+            <input id="search" type="text" placeholder="Search for a city"><br>
+            <button type="submit">Add City</button>
+        </header>
+
+        <div class="widgets-container">
+            <div class="widget">
+                <div class="info">
+                    <div class="container-left">
+                        <h2 id="city">Queens,</h2>
+                        <h2 id="state">New York</h2>
+                    </div>
+                    <div class="container-right">
+                        <h3>Light Showers</h3>
+                        <p>H: 55° L: 30°</p>
+                    </div>
+                </div>
+                <div class="info middle">
+                    <div class="container-left">
+                        <span id="temperature">34</span><span id="degrees">°F</span>
+                    </div>
+                    <div class="container-right">
+                        <img src="rain.png" alt="">
+                    </div>
+                </div>
+                <div class="info bottom-info">
+                    <div class="column">
+                        <h4>Rain</h4>
+                        <p>80%</p>
+                    </div>
+                    <div class="column">
+                        <h4>Humidity</h4>
+                        <p>65%</p>
+                    </div>
+                    <div class="column">
+                        <h4>Wind</h4>
+                        <p>9mph</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+        <script src="app.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,120 @@
+/* Fonts & General */
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #BD00FF;
+    padding-top: 4%;
+}
+
+/* Header Section */
+header {
+    display: block;
+    margin-bottom: 3%;
+}
+
+h1 {
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px black;
+    color: white;
+    width: 25%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input::placeholder {
+    color: white;
+    text-align: center;
+}
+
+input:focus {
+    color: white;
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    background-color: #ff4c00;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Widgets Section */
+.widget {
+    background-color: white;
+    max-width: 30%;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 2rem 3rem;
+    box-shadow: 5px 5px 20px black;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-left {
+    text-align: left;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.container-right {
+    text-align: right;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.middle {
+    align-items: center;
+}
+
+#temperature {
+    font-size: 5rem;
+}
+
+#degrees {
+    font-size: 2rem;
+    vertical-align: top;
+}
+
+.bottom-info {
+    justify-content: space-around;
+}
+
+h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
