@@ -32,6 +32,7 @@ h1 {
     color: white;
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
+    letter-spacing: 2px;
 }
 
 input {
@@ -42,9 +43,10 @@ input {
     width: 25%;
     text-align: center;
     font-size: 1rem;
-    padding: 5px;
+    padding: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    letter-spacing: 1px;
 }
 
 input::placeholder {
@@ -100,14 +102,16 @@ h2 {
 
 h3 {
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .middle {
     align-items: center;
+    margin: 1rem 0;
 }
 
 #temperature {
-    font-size: 5rem;
+    font-size: 6rem;
     color: black;
 }
 
@@ -117,11 +121,18 @@ h3 {
     color: black;
 }
 
-.bottom-info {
-    justify-content: space-around;
+
+.bottom {
+    justify-content: space-between;
 }
 
 h4 {
     font-size: 0.9rem;
     text-transform: uppercase;
+}
+
+
+/* Tablet Responsive */
+@media screen and (max-width: 1590px) {
+
 }
