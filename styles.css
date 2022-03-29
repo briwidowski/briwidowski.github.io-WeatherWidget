@@ -1,5 +1,8 @@
 /* Fonts & General */
-
+@font-face {
+    font-family: Karla;
+    src: url('Fonts/Karla-VariableFont_wght.ttf');
+}
 
 *,
 ::after,
@@ -12,6 +15,7 @@
 body {
     margin: 0 auto;
     text-align: center;
+    font-family: Karla;
     display: flex;
     flex-direction: column;
     background-color: #BD00FF;
@@ -73,6 +77,7 @@ button {
     border-radius: 50px;
     padding: 2rem 3rem;
     box-shadow: 5px 5px 20px black;
+    color: #646464;
 }
 
 .info {
@@ -103,11 +108,13 @@ h3 {
 
 #temperature {
     font-size: 5rem;
+    color: black;
 }
 
 #degrees {
     font-size: 2rem;
     vertical-align: top;
+    color: black;
 }
 
 .bottom-info {
