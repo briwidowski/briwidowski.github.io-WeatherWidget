@@ -18,8 +18,9 @@ body {
     font-family: Karla;
     display: flex;
     flex-direction: column;
-    background-color: #BD00FF;
-    padding-top: 4%;
+    /*background-color: #BD00FF;*/
+    background-image: url("https://source.unsplash.com/1600x900/?clouds,sunset,skyline");
+    padding-top: 3%;
 }
 
 /* Header Section */
@@ -31,14 +32,14 @@ header {
 h1 {
     color: white;
     font-size: 2.8rem;
-    margin-bottom: 0.5rem;
     letter-spacing: 2px;
+    text-shadow: 1px 1px 4px black;
 }
 
 input {
     background-color: transparent;
     border: none;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px white;
     color: white;
     width: 25%;
     text-align: center;
@@ -47,6 +48,7 @@ input {
     margin-top: 1rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black;
 }
 
 input::placeholder {
@@ -61,14 +63,19 @@ input:focus {
 
 input:focus::placeholder {
     color: transparent;
+    text-shadow: none;
 }
 
 button {
     padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
     background-color: #ff4c00;
     color: white;
+    text-shadow: 0px 1px 1px grey;
+    box-shadow: 1px 1px 1px black;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 /* Widgets Section */
@@ -78,7 +85,7 @@ button {
     margin: 0 auto;
     border-radius: 50px;
     padding: 2rem 3rem;
-    box-shadow: 5px 5px 20px black;
+    box-shadow: 1px 5px 10px black;
     color: #646464;
 }
 
@@ -94,6 +101,7 @@ button {
 
 h2 {
     font-weight: 500;
+    font-size: 2.2rem;
 }
 
 .container-right {
@@ -102,7 +110,9 @@ h2 {
 
 h3 {
     font-weight: 500;
+    font-size: 1.1rem;
     text-transform: uppercase;
+    padding-top: 0.5rem;
 }
 
 .middle {
@@ -110,12 +120,13 @@ h3 {
     margin: 1rem 0;
 }
 
-#temperature {
+.temperature {
     font-size: 6rem;
+    font-weight: 300;
     color: black;
 }
 
-#degrees {
+.degrees {
     font-size: 2rem;
     vertical-align: top;
     color: black;
@@ -127,7 +138,6 @@ h3 {
 }
 
 h4 {
-    font-size: 0.9rem;
     text-transform: uppercase;
 }
 
