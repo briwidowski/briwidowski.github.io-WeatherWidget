@@ -29,8 +29,8 @@ let weather = {
         document.querySelector(".high").innerText = "H: " + Math.round(temp_max) + "°";
         document.querySelector(".low").innerText = " L: " + Math.round(temp_min) + "°";
         document.querySelector(".clouds").innerText = all + "%";
-        document.querySelector(".humidity").innerText = Math.round(humidity) + "%";
-        document.querySelector(".wind").innerText = Math.round(speed) + "mph";
+        document.querySelector(".humidityLevel").innerText = Math.round(humidity) + "%";
+        document.querySelector(".windSpeed").innerText = Math.round(speed) + "mph";
     },
     search: function() {
         this.fetchWeather(document.querySelector(".search").value);

@@ -13,25 +13,21 @@
 }
 
 body {
-    margin: 0 auto;
     text-align: center;
     font-family: Karla;
-    display: flex;
-    flex-direction: column;
-    /*background-color: #BD00FF;*/
-    background-image: url("https://source.unsplash.com/1600x900/?clouds,sunset,skyline");
-    padding-top: 3%;
-}
-
-/* Header Section */
-header {
     display: block;
-    margin-bottom: 3%;
+    /*background-color: #BD00FF;*/
+    background-image: url("https://source.unsplash.com/1600x900/?clouds,skyline");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 10vh;
 }
 
+/* Header */
 h1 {
     color: white;
-    font-size: 2.8rem;
+    font-size: 1.6rem;
     letter-spacing: 2px;
     text-shadow: 1px 1px 4px black;
 }
@@ -41,11 +37,11 @@ input {
     border: none;
     border-bottom: solid 1px white;
     color: white;
-    width: 25%;
+    width: 30%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 10px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px black;
@@ -68,60 +64,85 @@ input:focus::placeholder {
 
 button {
     padding: 0.5rem 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     background-color: #ff4c00;
     color: white;
     text-shadow: 0px 1px 1px grey;
-    box-shadow: 1px 1px 1px black;
     border-radius: 5px;
     border: none;
     cursor: pointer;
 }
 
-/* Widgets Section */
+button:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+/* Widget Styles*/
+
 .widget {
     background-color: white;
-    max-width: 30%;
-    margin: 0 auto;
+    display: grid;
+    height: 50vh;
+    grid-template-rows: 0.6fr 1.2fr 0.8fr;
+    grid-template-areas:
+        "top"
+        "middle"
+        "bottom";
+    margin: 10% auto 2% auto;
+    width: 60%;
     border-radius: 50px;
-    padding: 2rem 3rem;
-    box-shadow: 1px 5px 10px black;
     color: #646464;
-}
-
-.info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.container-left {
-    text-align: left;
+    box-shadow: 1px 5px 10px black;
+    padding: 1.5rem;
+    overflow: hidden;
 }
 
 h2 {
     font-weight: 500;
-    font-size: 2.2rem;
-}
-
-.container-right {
-    text-align: right;
+    font-size: 2.1rem;
+    grid-area: city;
 }
 
 h3 {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    padding-top: 0.5rem;
+    grid-area: description;
+}
+
+.top {
+    background-color: white;
+    grid-area: top;
+    display: grid;
+    grid-template-rows: 0.8fr 0.2fr;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 
+        "city description"
+        "city highlow";
+    justify-items: center;
+    align-items: center;
+}
+
+.highlow {
+    grid-area: highlow;
 }
 
 .middle {
+    background-color: white;
+    grid-area: middle;
+    display: grid;
+    grid-template-rows: 1.4fr;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-areas: 
+        "container-left container-right";
+    justify-items: center;
     align-items: center;
-    margin: 1rem 0;
+    margin-top: 5%;
 }
 
-.temperature {
-    font-size: 6rem;
+.middle .container-left {
+    grid-area: container-left;
+    font-size: 4.2rem;
     font-weight: 300;
     color: black;
 }
@@ -132,17 +153,83 @@ h3 {
     color: black;
 }
 
-
-.bottom {
-    justify-content: space-between;
+.middle .container-right {
+    grid-area: container-right;
 }
 
 h4 {
     text-transform: uppercase;
 }
 
+.bottom {
+    background-color: white;
+    grid-area: bottom;
+    display: grid;
+    grid-template-rows: 1.4fr;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr;
+    grid-template-areas: 
+        "rain humidity wind";
+    justify-items: center;
+    align-items: center;
+    padding-top: 1rem;
+}
 
-/* Tablet Responsive */
-@media screen and (max-width: 1590px) {
+.rain {
+    grid-area: rain;
+}
 
+.humidity {
+    grid-area: humidity;
+}
+
+.wind {
+    grid-area: wind;
+}
+
+
+@media only screen and (min-width: 650px) {
+    body {
+        padding-top: 5%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    input {
+        font-size: .9rem;
+    }
+    
+    button {
+        font-size: 0.8rem;
+    }
+
+    .widget {
+        margin: 5% auto 0 auto;
+        width: 45%;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    body {
+        padding-top: 4%;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .widget {
+        margin: 2% auto;
+        width: 38%;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
 }
