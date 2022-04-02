@@ -89,7 +89,7 @@ button:hover {
         "middle"
         "bottom";
     margin: 10% auto 2% auto;
-    width: 60%;
+    width: 65%;
     border-radius: 50px;
     color: #646464;
     box-shadow: 1px 5px 10px black;
@@ -99,7 +99,7 @@ button:hover {
 
 h2 {
     font-weight: 500;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     grid-area: city;
 }
 
